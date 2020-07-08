@@ -76,17 +76,20 @@ header {
 .addmissions-side-menu {
 	position: fixed;
 	right: 0;
-	width: 120px;
+	width: 180px;
 	background: #4A4A4A;
-	color:white;
+	color: white;
 }
 .addmissions-side-menu .icon {
 	border-right: .5px solid #cccccc;
 }
 .addmissions-side-menu .cell {
 	border-bottom: .5px solid #cccccc;
-	padding: 15px;;
+	padding:12px 0px 15px 12px;
 }
 .addmissions-side-menu .cell.last-row {
 	border-bottom: none;
+}
+.addmissions-side-menu .cell.first-row {
+	background-color: #ae936c;
 }
