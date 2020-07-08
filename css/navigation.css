@@ -17,8 +17,14 @@ header {
 .main-nav {
 	padding: 20px 15px;
 }
+@media print, screen and (max-width: 64em) {
+    .main-nav {
+        background: #61578b;
+	}
+}
+
 .main-nav .menu li {
-	padding-left: 70px;
+	padding-left: 60px;
 	font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 	font-size: 17px;
 	font-weight: bold;
@@ -39,7 +45,7 @@ header {
     z-index: 0;
     left: 50%;
     bottom: 0;
-    background: #ae936c;
+    background: #A5864C;
     height: 4px;
     -webkit-transition-duration: 0.2s;
     transition-duration: 0.2s;
@@ -83,19 +89,28 @@ header {
 	position: fixed;
 	right: 0;
 	width: 180px;
-	background: #4A4A4A;
+	background-color: #4A4A4A;
 	color: white;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	top: 350px;
+}
+.addmissions-side-menu .cell:first-child {
+	border-top-left-radius: 5px;
 }
 .addmissions-side-menu .icon {
 	border-right: .5px solid #cccccc;
 }
 .addmissions-side-menu .cell {
 	border-bottom: .5px solid #cccccc;
-	padding:12px 0px 15px 12px;
+	font-weight: bold;
 }
 .addmissions-side-menu .cell.last-row {
 	border-bottom: none;
 }
 .addmissions-side-menu .cell.first-row {
-	background-color: #ae936c;
+	background-color: #A5864C;
+}
+.addmissions-side-menu .cell{
+	padding:12px;
 }
