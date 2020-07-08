@@ -729,20 +729,58 @@
 							<a href=""><i class="fas fa-search"></i></a>
 						</div>
 					</div>
-					<div class="main-nav grid-x grid-padding-x large-up-2">
+					<div class="main-nav grid-x grid-padding-x large-up-2 align-middle">
 						<div class="cell logo">
 							<a href="/">
-								<img src="https://www.taylor.edu/img/tu-logo.png" width="300" alt="Taylor University Logo">
+								<img src="https://www.taylor.edu/img/tu-logo.png" width="250" alt="Taylor University Logo">
 							</a>
 						</div>
 						<div class="cell">
-							<ul class="menu menu-shift">
-								<li>About</li>
-								<li>Admissions</li>
-								<li>Academics</li>
-								<li>Life At Taylor</li>
+							<ul class="menu dropdown float-right" data-dropdown-menu>
+								<li class="mega-menu">
+									<a data-toggle="mega-menu" href="#">About</a>
+							
+									<div class="dropdown-pane bottom" id="mega-menu" data-dropdown data-options="closeOnClick:true; hover: true; hoverPane: true; vOffset:11">
+							
+										<div class="row expanded">
+											<div class="column">
+												<ul class="menu vertical">
+													<li><a href="#">One</a></li>
+													<li><a href="#">Two</a></li>
+													<li><a href="#">Three</a></li>
+												</ul>
+											</div>
+											<div class="column">
+												<ul class="menu vertical">
+													<li><a href="#">One</a></li>
+													<li><a href="#">Two</a></li>
+													<li><a href="#">Three</a></li>
+												</ul>
+											</div>
+											<div class="column">
+												<ul class="menu vertical">
+													<li><a href="#">One</a></li>
+													<li><a href="#">Two</a></li>
+													<li><a href="#">Three</a></li>
+												</ul>
+											</div>
+										</div>
+								
+									</div>
+								</li>
+								<li><a href="#">Admissions</a></li>
+								<li><a href="#">Academics</a></li>
+								<li><a href="#">Life At Taylor</a></li>
 							</ul>
 						</div>
+					</div>
+					<div class="grid-x addmissions-side-menu text-center">
+						<div class="cell small-4 icon"><i class="fas fa-search"></i></div>
+						<div class="cell small-8">Apply</div>
+						<div class="cell small-4 icon"><i class="fas fa-search"></i></div>
+						<div class="cell small-8">Get Info</div>
+						<div class="cell small-4 icon last-row"><i class="fas fa-search"></i></div>
+						<div class="cell small-8 last-row">Visit</div>
 					</div>
 					<!-- <div id="mobile-nav" class="hide-for-large" data-sticky-container>
 						<div class="sticky sticky-topbar" data-sticky data-options="anchor:page; marginTop:0; stickyOn:small;">

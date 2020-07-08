@@ -18,7 +18,75 @@ header {
 	padding: 20px 15px;
 }
 .main-nav .menu li {
-	padding-left: 20px;
-	font-size: 22px;
+	padding-left: 70px;
 	font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+	font-size: 17px;
+	font-weight: bold;
+	position: relative;
+}
+.main-nav .menu li a {
+	position: relative;
+	color: #61578b;
+	display: inline-block;
+}
+
+.main-nav .menu li a:before {
+	content: '';
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    bottom: 0;
+    background: #ae936c;
+    height: 3px;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+	width: 0;
+}
+.main-nav .menu li a:hover:before {
+	left:0%;
+	width: 100%
+}
+.mega-menu .dropdown-pane {
+	width: 100%;
+	max-width: 85rem;
+	margin: 0 auto !important;
+	left: 0% !important;
+	right: 0% !important;
+}
+
+.mega-menu .menu {
+	background: none;
+}
+
+.mega-menu > a::after {
+	display: block;
+	width: 0;
+	height: 0;
+	border: inset 6px;
+	content: '';
+	border-bottom-width: 0;
+	border-top-style: solid;
+	border-color: #1779ba transparent transparent;
+	margin-left: 10px;
+	margin-top: 11%;
+}
+  
+.addmissions-side-menu {
+	position: fixed;
+	right: 0;
+	width: 120px;
+	background: #4A4A4A;
+	color:white;
+}
+.addmissions-side-menu .icon {
+	border-right: .5px solid #cccccc;
+}
+.addmissions-side-menu .cell {
+	border-bottom: .5px solid #cccccc;
+	padding: 15px;;
+}
+.addmissions-side-menu .cell.last-row {
+	border-bottom: none;
 }
