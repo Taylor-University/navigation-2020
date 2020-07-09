@@ -114,3 +114,40 @@ header {
 .addmissions-side-menu .cell{
 	padding:12px;
 }
+/* hamburger menu animation */
+.container {
+	display: inline-block;
+	cursor: pointer;
+	padding-left: 19px;
+}
+  
+.bar1, .bar2, .bar3 {
+	width: 30px;
+	height: 2px;
+	background-color: #ffffff;
+	margin: 8px 0;
+	transition: 0.4s;
+}
+  
+.change .bar1 {
+	-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+	transform: rotate(-45deg) translate(-7px, 6px);
+}
+  
+.change .bar2 {opacity: 0;}
+  
+.change .bar3 {
+	-webkit-transform: rotate(45deg) translate(-8px, -8px);
+	transform: rotate(45deg) translate(-7px, -7px);
+}
+#search {
+	color: white;
+	font-weight: normal;
+  }
+#offCanvasTop1{
+	top: 80px;
+	height: 100%;
+  }
+.js-off-canvas-overlay.is-visible {
+	opacity: 0;
+  }

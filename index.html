@@ -36,8 +36,14 @@
 		<link type="text/css" href="https://shared.taylor.edu/application/themes/foundation-6/css/app.css" rel="stylesheet"/>
 		<link type="text/css" href="https://shared.taylor.edu/application/themes/foundation-6/css/style.css" rel="stylesheet"/>
 		<link type="text/css" href="css/navigation.css" rel="stylesheet"/>
+		<!-- <link type="text/js" href="css/nav.js" rel="stylesheet"/> -->
 
 		<script src="https://kit.fontawesome.com/f2135f2b03.js"></script>
+		<script>
+			function myFunction(x) {
+			  x.classList.toggle("change");
+			}
+		</script>
 
 	</head>
     <body>
@@ -730,12 +736,29 @@
 						</div>
 					</div>
 					<div class="main-nav grid-x align-middle">
-						<div class="cell logo large-3">
+						<div class="cell logo small-8 large-3">
 							<a href="/">
 								<img class="show-for-large"src="https://www.taylor.edu/img/tu-logo.png" width="250" alt="Taylor University Logo">
 								<img class="hide-for-large"src="https://shared.taylor.edu/application/themes/foundation-6/pardot/img/logo-w.png" width="150">
 							</a>
 						</div>
+						<div class="cell small-2">
+							<a href=""><i class="fal fa-search fa-lg float-right" id="search"></i></a>
+							
+						</div>
+						<div class="cell small-2  hide-for-large">
+							<div class="container" onclick="myFunction(this)" data-toggle="offCanvasTop1">
+								<div class="bar1"></div>
+								<div class="bar2"></div>
+								<div class="bar3"></div>
+							</div>
+						</div>
+						<div class="off-canvas position-top" id="offCanvasTop1" data-off-canvas>
+							<!-- Your menu or Off-canvas content goes here -->
+						  </div>
+						  <div class="off-canvas-content" data-off-canvas-content>
+							<!-- Your page content lives here -->
+						  </div>
 						<div class="cell show-for-large large-9">
 							<ul class="menu dropdown float-right" data-dropdown-menu>
 								<li class="mega-menu">
