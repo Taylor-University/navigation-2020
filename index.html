@@ -43,6 +43,7 @@
 			function myFunction(x) {
 			  x.classList.toggle("change");
 			}
+			
 		</script>
 
 	</head>
@@ -727,12 +728,21 @@
 				<header>
 					<div class="top-bar show-for-large">
 						<div class="top-nav-left">
-							<a href="">Information For <i class="fas fa-chevron-down"></i></a>
+							<ul class="menu dropdown float-right" id="dropdownMenuStyle" data-dropdown-menu>
+								<li class="dropdown-menu">
+									<a data-toggle="dropdown-menu" href="">Information For <i class="fas fa-chevron-down"></i></a>
+									<div class="dropdown-pane bottom" id="dropdown-menu" data-dropdown data-options="closeOnClick:true; hover: true; hoverPane: true;">
+										<ul class="menu" id="menu-item">
+											<li><a href="#">Item 1A</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
 						</div>
 						<div class="top-nav-right text-right">
 							<a href="">Give</a>
 							<span>|</span>
-							<a href=""><i class="fas fa-search"></i></a>
+							<button><a><i class="fas fa-search"></i></a></button>
 						</div>
 					</div>
 					<div class="main-nav grid-x align-middle">
@@ -742,7 +752,7 @@
 								<img class="hide-for-large"src="https://shared.taylor.edu/application/themes/foundation-6/pardot/img/logo-w.png" width="150">
 							</a>
 						</div>
-						<div class="cell small-2">
+						<div class="cell small-2 hide-for-large">
 							<a href=""><i class="fal fa-search fa-lg float-right" id="search"></i></a>
 							
 						</div>
@@ -753,12 +763,16 @@
 								<div class="bar3"></div>
 							</div>
 						</div>
-						<div class="off-canvas position-top" id="offCanvasTop1" data-off-canvas>
-							<!-- Your menu or Off-canvas content goes here -->
-						  </div>
-						  <div class="off-canvas-content" data-off-canvas-content>
-							<!-- Your page content lives here -->
-						  </div>
+						<div class="mobile-nave grid-x hide-for-large">
+							<div class="cell">
+								<div class="off-canvas-wrapper">
+								  <div class="off-canvas position-top" id="offCanvasTop1" data-off-canvas>
+									<!-- Your menu or Off-canvas content goes here -->
+								  </div>
+								</div>
+							</div>
+
+						</div>
 						<div class="cell show-for-large large-9">
 							<ul class="menu dropdown float-right" data-dropdown-menu>
 								<li class="mega-menu">
@@ -798,14 +812,19 @@
 							</ul>
 						</div>
 					</div>
-					<div class="grid-x addmissions-side-menu align-middle show-for-large">
+					<div class="grid-x addmissions-side-menu align-middle sidenav show-for-large">
 						<div class="cell small-4 icon first-row text-center"><i class="fas fa-check"></i></div>
-						<div class="cell small-8 first-row text-left">Apply</div>
+						<div class="cell small-8 first-row text-left"><a href="#" id="Apply">Apply</a></div>
 						<div class="cell small-4 icon text-center"><i class="fas fa-tasks"></i></div>
-						<div class="cell small-8 text-left">Get Info</div>
+						<div class="cell small-8 text-left"><a href="#" id="GetInfo">Get Info</a></div>
 						<div class="cell small-4 icon last-row text-center"><i class="fas fa-map-marker-alt"></i></div>
-						<div class="cell small-8 last-row text-left">Visit</div>
+						<div class="cell small-8 last-row text-left"><a href="#" id="Visit">Visit</a></div>
 					</div>
+					<div id="wrap">
+						<form action="" autocomplete="on">
+						<input id="search" name="search" type="text" placeholder="What're we looking for ?"><input id="search_submit" value="Rechercher" type="submit">
+						</form>
+					  </div>
 					<!-- <div id="mobile-nav" class="hide-for-large" data-sticky-container>
 						<div class="sticky sticky-topbar" data-sticky data-options="anchor:page; marginTop:0; stickyOn:small;">
 							<div id="nav-bar" class="grid-x grid-padding-x align-justify align-middle">
