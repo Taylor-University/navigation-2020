@@ -175,6 +175,9 @@ header {
   .top-bar ul{
 	  background: none;
   }
+  #item {
+	  color: #61578b;
+  }
   #menu-item{
 	  color:black;
   }
