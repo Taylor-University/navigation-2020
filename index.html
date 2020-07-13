@@ -43,7 +43,7 @@
 			function myFunction(x) {
 			  x.classList.toggle("change");
 			}
-			
+
 		</script>
 
 	</head>
@@ -750,9 +750,14 @@
 							</ul>
 						</div>
 						<div class="top-nav-right text-right">
-							<a href="">Give</a>
-							<span>|</span>
-							<button><a><i class="fas fa-search"></i></a></button>
+							<div id="wrap">
+								<a href="">Give</a>
+								<span>|</span>
+								<!-- <form action="" autocomplete="on"> -->
+									<input id="search" name="search" type="text" placeholder="What're we looking for ?"><button type="submit" id="search_submit"><i class="fas fa-search"></i></button>
+								<!-- </form> -->
+							</div>
+							<!-- <button><a><i class="fas fa-search"></i></a></button> -->
 						</div>
 					</div>
 					<div class="main-nav grid-x align-middle">
@@ -764,7 +769,7 @@
 						</div>
 						<div class="cell small-2 hide-for-large">
 							<a href=""><i class="fal fa-search fa-lg float-right" id="search"></i></a>
-							
+
 						</div>
 						<div class="cell small-2  hide-for-large">
 							<div class="container" onclick="myFunction(this)" data-toggle="offCanvasTop1">
@@ -830,11 +835,6 @@
 						<div class="cell small-4 icon last-row text-center"><i class="fas fa-map-marker-alt"></i></div>
 						<div class="cell small-8 last-row text-left"><a href="#" id="Visit">Visit</a></div>
 					</div>
-					<div id="wrap">
-						<form action="" autocomplete="on">
-						<input id="search" name="search" type="text" placeholder="What're we looking for ?"><input id="search_submit" value="Rechercher" type="submit">
-						</form>
-					  </div>
 					<!-- <div id="mobile-nav" class="hide-for-large" data-sticky-container>
 						<div class="sticky sticky-topbar" data-sticky data-options="anchor:page; marginTop:0; stickyOn:small;">
 							<div id="nav-bar" class="grid-x grid-padding-x align-justify align-middle">
