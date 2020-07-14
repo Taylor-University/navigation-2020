@@ -4,8 +4,7 @@ header {
 .top-bar {
 	background-color: #61578b;
 	color: white;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding: 15px;
 	font-weight: bold;
 }
 .top-bar a {
@@ -23,7 +22,30 @@ header {
 	}
 }
 
-.main-nav .menu li {
+#info-menu .menu li {
+	font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+	font-size: 17px;
+	padding: 5px 0
+}
+#info-menu.dropdown.menu>li.is-dropdown-submenu-parent>a {
+	padding: 0;
+}
+#info-menu.dropdown.menu>li.is-dropdown-submenu-parent>a::after {
+	display: none;
+}
+#info-menu.dropdown.menu>li.is-active>a	 {
+	color: white;
+}
+#info-menu .submenu {
+	background-color: white;
+	width: 250px;
+	margin-top: 17px;
+}
+#info-menu li.is-submenu-item.is-dropdown-submenu-item:hover {
+	background-color: #dddddd;
+}
+
+.main-nav .menu li{
 	padding-left: 60px;
 	font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 	font-size: 17px;
@@ -178,11 +200,6 @@ header {
   #item {
 	  color: #61578b;
   }
-  #menu-item{
-	  color:black;
-  }
-  @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
-  @import url(https://raw.github.com/FortAwesome/Font-Awesome/master/docs/assets/css/font-awesome.min.css);
 
 
   #wrap {
@@ -195,12 +212,12 @@ header {
   }
 .top-bar #wrap input {
 	max-width: 500px;
-  }
-  #wrap i::focus {
-	outline: none;
-  }
+}
+#wrap i::focus {
+outline: none;
+}
 
-  input[type="text"] {
+input[type="text"] {
 	/* height: 60px; */
 	/* font-size: 55px; */
 	display: inline-block;
@@ -217,21 +234,22 @@ header {
 	right: -25px;
 	background: none;
 	z-index: 3;
-	transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+	transition: width 1s cubic-bezier(0.000, 0.795, 0.000, 1.000), background-color 1s cubic-bezier(0.000, 0.000, 1.000, 1.000), right 2s cubic-bezier(0.000, 0.000, 1.000, 1.000);
 	cursor: pointer;
 	box-shadow: none;
-  }
-  input[type="text"]::after {
-	  font-family: "Font Awesome 5 Pro";
-	  content: '\f002';
-	  font-weight: 900;
-  }
+	background-color: transparent;
+}
+input[type="text"]::after {
+	font-family: "Font Awesome 5 Pro";
+	content: '\f002';
+	font-weight: 900;
+}
 
-  /* input[type="text"]:focus:hover {
-	border-bottom: 1px solid #BBB;
-  } */
+/* input[type="text"]:focus:hover {
+border-bottom: 1px solid #BBB;
+} */
 
-  input[type="text"]:focus {
+input[type="text"]:focus {
 	width: 700px;
 	z-index: 1;
 	border-bottom: 1px solid #BBB;
@@ -241,8 +259,8 @@ header {
 	border: none;
 	right: 10px;
 	border-bottom: 1px solid #BBB;
-  }
-  button[type="submit"] {
+}
+button[type="submit"] {
 	/* height: 67px; */
 	/* width: 63px; */
 	display: inline-block;
@@ -259,8 +277,8 @@ header {
 	/* opacity: 0.4; */
 	/* cursor: pointer; */
 	/* transition: opacity .4s ease; */
-  }
+}
 
-  /* button[type="submit"]:hover {
+/* button[type="submit"]:hover {
 	opacity: 0.8;
-  } */
+} */
