@@ -40,6 +40,13 @@
 
 		<script src="https://kit.fontawesome.com/f2135f2b03.js"></script>
 		<script>
+			function openNav() {
+				document.getElementById("myNav").style.height = "100%";
+			}
+
+			function closeNav() {
+			document.getElementById("myNav").style.height = "0%";
+			}
 			function myFunction(x) {
 			  x.classList.toggle("change");
 			}
@@ -773,16 +780,60 @@
 						</div>
 						<div class="cell small-2  hide-for-large">
 							<div class="container" onclick="myFunction(this)" data-toggle="offCanvasTop1">
+								<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 								<div class="bar1"></div>
 								<div class="bar2"></div>
 								<div class="bar3"></div>
 							</div>
 						</div>
-						<div class="mobile-nave grid-x hide-for-large">
+						<div class="mobile-nav grid-x hide-for-large">
 							<div class="cell">
-								<div class="off-canvas-wrapper">
-								  <div class="off-canvas position-top" id="offCanvasTop1" data-off-canvas>
-									<!-- Your menu or Off-canvas content goes here -->
+								<!-- <div class="off-canvas-wrapper">
+									<div class="off-canvas position-top" id="offCanvasTop1" data-off-canvas>
+									  Your menu or Off-canvas content goes here
+									</div>
+								</div> -->
+								<div id="myNav" class="overlay">
+									<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+									<div class="mobile-nav grid-x hide-for-large">
+										<div class="overlay-content">
+											<div class="main-menu grid-x grid-padding-x">
+												<div class="cell">
+													<a href="#">About</a>
+													<a href="#">Admissions</a>
+													<a href="#">Academics</a>
+													<a href="#">Life at Taylor</a>
+													<hr>
+												</div>
+												<div class="cell">
+													<ul class="small-menu">
+														<li><a class="not-active" href=" /News">News</a></li>
+														<li class="gray-pipe">|</li>
+														<li><a class="not-active" href=" /Calendar">Calendar</a></li>
+														<li class="gray-pipe">|</li>
+														<li><a class="not-active" href=" /Info">Info For</a></li>
+														<li class="gray-pipe">|</li>
+														<li><a class="not-active" href=" /give">Give</a></li>
+													</ul>
+												</div>
+											</div>
+											
+											<div class="call-action grid-x grid-padding-x">
+												<div class="cell small-4 button expanded icon first-row text-center" id="apply" href="#"><i class="fas fa-check"></i>Apply</div>
+												<div class="cell small-6 hollow button icon first-row text-center" href="#"><i class="fas fa-tasks"></i>Request Info</div>
+												<div class="cell small-6 hollow button icon first-row text-center" id="visit" href="#"><i class="fas fa-map-marker-alt"></i>Request Info</div>
+												
+												<!-- <button class="hollow button fas fa-map-marker-alt" id="visit" href="#">Visit</button> -->
+												<hr>
+											</div>
+											<div class="social-media text-center">
+												<i class="fab fa-facebook-square"></i>
+												<i class="fab fa-instagram"></i>
+												<i class="fab fa-twitter-square"></i>
+												<i class="fab fa-youtube-square"></i>
+											</div>
+											
+										</div>
 								  </div>
 								</div>
 							</div>

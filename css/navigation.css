@@ -165,13 +165,7 @@ header {
 	color: white;
 	font-weight: normal;
   }
-#offCanvasTop1{
-	top: 80px;
-	height: 100%;
-  }
-.js-off-canvas-overlay.is-visible {
-	opacity: 0;
-  }
+
   .top-bar ul{
 	  background: none;
   }
@@ -264,3 +258,86 @@ header {
   /* button[type="submit"]:hover {
 	opacity: 0.8;
   } */
+
+  .overlay {
+	height: 0%;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	top: 100px;
+	left: 0;
+	background-color: white;
+	
+	overflow-y: hidden;
+	transition: 0.5s;
+  }
+  
+  .overlay-content {
+	position: relative;
+	top: 0;
+	width: 100%;
+	text-align: left;
+	margin-top: 10px;
+  }
+  .main-menu {
+	  padding-left: 10px;
+  }
+  
+  .main-menu a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 22px;
+	color: black;
+	display: block;
+	transition: 0.3s;
+  }
+  .call-action {
+	  padding: 10px;
+  }
+  #apply{
+	  background-color: #61578b;
+	  margin-bottom: -6px;
+  }
+
+  #visit {
+	  padding-left: 0px;
+	  padding-right: 0px;
+}
+
+.button.hollow {
+	border: 1px solid #61578b;
+	color: #61578b;
+}
+  
+  
+  .overlay a:hover, .overlay a:focus {
+	color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+	position: absolute;
+	top: -16px;
+	right: 25px;
+	font-size: 40px;
+  }
+  
+  @media screen and (max-height: 450px) {
+	.overlay {overflow-y: auto;}
+	.overlay a {font-size: 20px}
+	.overlay .closebtn {
+	font-size: 40px;
+	top: 15px;
+	right: 35px;
+	}
+  }
+
+#offCanvasTop1{
+	top: 80px;
+	height: 100%;
+  }
+.js-off-canvas-overlay.is-visible {
+	opacity: 0;
+  }
+
+
+  /* <div class="container" onclick="myFunction(this)" data-toggle="offCanvasTop1"> */
