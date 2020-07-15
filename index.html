@@ -39,12 +39,7 @@
 		<!-- <link type="text/js" href="css/nav.js" rel="stylesheet"/> -->
 
 		<script src="https://kit.fontawesome.com/f2135f2b03.js"></script>
-		<script>
-			function myFunction(x) {
-			  x.classList.toggle("change");
-			}
 
-		</script>
 
 	</head>
     <body>
@@ -819,12 +814,12 @@
 						</div>
 					</div>
 					<div class="grid-x addmissions-side-menu align-middle sidenav show-for-large">
-						<div class="cell small-4 icon first-row text-center"><i class="fas fa-check"></i></div>
-						<div class="cell small-8 first-row text-left"><a href="#" id="Apply">Apply</a></div>
-						<div class="cell small-4 icon text-center"><i class="fas fa-tasks"></i></div>
-						<div class="cell small-8 text-left"><a href="#" id="GetInfo">Get Info</a></div>
-						<div class="cell small-4 icon last-row text-center"><i class="fas fa-map-marker-alt"></i></div>
-						<div class="cell small-8 last-row text-left"><a href="#" id="Visit">Visit</a></div>
+						<div class="cell small-4 icon first-row text-center"><a href="#"><i class="fas fa-check"></i></a></div>
+						<div class="cell small-8 first-row text-left"><a href="#">Apply</a></div>
+						<div class="cell small-4 icon text-center"><a href="#"><i class="fas fa-tasks"></i></a></div>
+						<div class="cell small-8 text-left"><a href="#">Get Info</a></div>
+						<div class="cell small-4 icon last-row text-center"><a href="#"><i class="fas fa-map-marker-alt"></i></a></div>
+						<div class="cell small-8 last-row text-left"><a href="#">Visit</a></div>
 					</div>
 					<!-- <div id="mobile-nav" class="hide-for-large" data-sticky-container>
 						<div class="sticky sticky-topbar" data-sticky data-options="anchor:page; marginTop:0; stickyOn:small;">
@@ -1419,5 +1414,41 @@
 
 		<script src="https://shared.taylor.edu/application/themes/foundation-6/js/functions.js?4550061"></script>
 		<script src="https://shared.taylor.edu/application/themes/foundation-6/js/app.js?5479461"></script>
+		<script>
+			// var lastScroll = 0;
+			$(window).on('load', showCtaOptions);
+			// $(window).on('load', function () {
+			// 	$('.addmissions-side-menu').addClass('top');
+			// });
+			$(window).on('scroll', showCtaOptions);
+
+			// function myFunction(x) {
+			//   x.classList.toggle("change");
+			// }
+
+			function showCtaOptions() {
+
+				let specificHeight = 250
+				let delayInMilliseconds = 300;
+				let scroll = $(window).scrollTop();
+				console.log(scroll);
+
+				if(scroll >= specificHeight) {
+					setTimeout(function () {
+
+						$('.addmissions-side-menu').removeClass('top');
+
+					}, delayInMilliseconds);
+				} else {
+					setTimeout(function () {
+
+						$('.addmissions-side-menu').addClass('top');
+
+					}, delayInMilliseconds);
+				}
+
+			}
+
+		</script>
 	</body>
 </html>

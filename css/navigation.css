@@ -140,12 +140,13 @@ header {
 	border-bottom: .5px solid #cccccc;
 	font-weight: bold;
 }
-.addmissions-side-menu:hover {
+.addmissions-side-menu:hover, .addmissions-side-menu.top {
 	right: 0;
 }
 
-.addmissions-side-menu .cell a{
+.addmissions-side-menu .cell a {
 	color: white;
+	padding: 12px;
 }
 
 .addmissions-side-menu .cell.last-row {
