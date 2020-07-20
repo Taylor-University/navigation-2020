@@ -358,5 +358,10 @@ button[type="submit"] {
 	opacity: 0;
   }
 
+  .small-menu a{
+	  text-color: #A5864C;
+	  font-size: initial;
+  }
+
 
   /* <div class="container" onclick="myFunction(this)" data-toggle="offCanvasTop1"> */
