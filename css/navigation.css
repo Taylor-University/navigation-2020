@@ -6,9 +6,18 @@ header {
 	color: white;
 	padding: 15px;
 	font-weight: bold;
+	line-height: 0;
+}
+.top-bar ul {
+	background: none;
+	font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 .top-bar a {
 	color: white;
+}
+.top-bar a.item {
+	color: #61578b;
+	padding: .5rem;
 }
 .top-bar .top-nav-right span {
 	padding: 0 20px;
@@ -39,7 +48,8 @@ header {
 #info-menu .submenu {
 	background-color: white;
 	width: 250px;
-	margin-top: 17px;
+	margin-top: 15px;
+	margin-left: -5px;
 }
 #info-menu li.is-submenu-item.is-dropdown-submenu-item:hover {
 	background-color: #dddddd;
@@ -48,9 +58,8 @@ header {
 .main-nav .menu li{
 	padding-left: 60px;
 	font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-	font-size: 17px;
+	font-size: 14px;
 	font-weight: bold;
-	/* position: relative; */
 }
 .main-nav .mega-menu li {
 	padding-left: 0;
@@ -59,6 +68,7 @@ header {
 	position: relative;
 	color: #61578b;
 	display: inline-block;
+	font-size: 16px;
 }
 
 .main-nav .menu li a:before {
@@ -75,7 +85,7 @@ header {
 	transition-timing-function: ease-out;
 	width: 0;
 }
-.main-nav .menu li a:hover:before {
+.main-nav .menu li a:hover:before, .main-nav .menu li a.visible-link:before {
 	left:0%;
 	width: 100%
 }
@@ -94,8 +104,8 @@ header {
 	margin: 0 auto !important;
 	left: 0% !important;
 	right: 0% !important;
-	border: none;
-	background-color: #f2f2f2;
+	/* border: none; */
+	/* background-color: #f2f2f2; */
 	padding: 2rem;
 }
 
@@ -187,40 +197,30 @@ header {
 #search {
 	color: white;
 	font-weight: normal;
-  }
-
-  .top-bar ul{
-	  background: none;
-  }
-  #item {
-	  color: #61578b;
-  }
+}
 
 
-  #wrap {
+#wrap {
 	/* margin: 50px 100px; */
 	display: inline-block;
 	position: relative;
 	/* height: 60px; */
 	/* float: right; */
 	padding: 0;
-  }
+}
 .top-bar #wrap input {
 	max-width: 500px;
 }
 #wrap i::focus {
-outline: none;
+	outline: none;
 }
 
 input[type="text"] {
-	/* height: 60px; */
-	/* font-size: 55px; */
+	height: 30px;
 	display: inline-block;
-	/* font-family: "Lato"; */
-	/* font-weight: 100; */
 	border: none;
 	outline: none;
-	/* color: #555; */
+	color: #fff;
 	padding: 3px;
 	padding-right: 33px;
 	width: 0px;
@@ -240,20 +240,15 @@ input[type="text"]::after {
 	font-weight: 900;
 }
 
-/* input[type="text"]:focus:hover {
-border-bottom: 1px solid #BBB;
-} */
-
 input[type="text"]:focus {
 	width: 700px;
 	z-index: 1;
-	border-bottom: 1px solid #BBB;
 	cursor: text;
 	background-color: #61578b;
 	box-shadow: none;
 	border: none;
+	border-bottom: 1px solid #DDD;
 	right: 10px;
-	border-bottom: 1px solid #BBB;
 }
 button[type="submit"] {
 	/* height: 67px; */
@@ -286,11 +281,11 @@ button[type="submit"] {
 	top: 100px;
 	left: 0;
 	background-color: white;
-	
+
 	overflow-y: hidden;
 	transition: 0.5s;
   }
-  
+
   .overlay-content {
 	position: relative;
 	top: 0;
@@ -301,7 +296,7 @@ button[type="submit"] {
   .main-menu {
 	  padding-left: 10px;
   }
-  
+
   .main-menu a {
 	padding: 8px;
 	text-decoration: none;
@@ -328,19 +323,19 @@ button[type="submit"] {
 	border: 1px solid #61578b;
 	color: #61578b;
 }
-  
-  
+
+
   .overlay a:hover, .overlay a:focus {
 	color: #f1f1f1;
   }
-  
+
   .overlay .closebtn {
 	position: absolute;
 	top: -16px;
 	right: 25px;
 	font-size: 40px;
   }
-  
+
   @media screen and (max-height: 450px) {
 	.overlay {overflow-y: auto;}
 	.overlay a {font-size: 20px}
