@@ -64,7 +64,7 @@ header {
 .main-nav .mega-menu li {
 	padding-left: 0;
 }
-.main-nav .show-large-large .menu li a {
+.main-nav .show-for-large .menu li a {
 	position: relative;
 	color: #61578b;
 	display: inline-block;
@@ -85,7 +85,7 @@ header {
 	transition-timing-function: ease-out;
 	width: 0;
 }
-.main-nav .menu li a:hover:before, .main-nav .menu li a.visible-link:before {
+.main-nav .show-for-large .menu li a:hover:before, .main-nav .show-for-large .menu li a.visible-link:before {
 	left:0%;
 	width: 100%
 }
@@ -299,9 +299,9 @@ button[type="submit"] {
   #myNav{
 	background-color: #f2f2f2;
   }
-  
 
-  .main-menu a {
+
+  .main-menu .hide-for-large a {
 	padding: 8px;
 	text-decoration: none;
 	font-size: 22px;
@@ -309,7 +309,7 @@ button[type="submit"] {
 	display: block;
 	transition: 0.3s;
   }
-  .main-nav .menu li {
+  .main-nav .hide-for-large .menu li {
 	  padding-left: 0px;
   }
 
@@ -370,7 +370,7 @@ button[type="submit"] {
   }
 
   .small-menu a{
-	  color: #87672C; 
+	  color: #87672C;
 	  font-size: larger;
 	  padding: 5px;
   }
