@@ -318,10 +318,11 @@ button[type="submit"] {
 	  margin-bottom: -6px;
   }
 
-  #visit {
+  /* #visit {
 	  padding-left: 0px;
 	  padding-right: 0px;
-}
+	  margin-right: 10px;
+} */
 
 .button.hollow {
 	border: 1px solid #61578b;
@@ -359,8 +360,20 @@ button[type="submit"] {
   }
 
   .small-menu a{
-	  text-color: #A5864C;
+	  color: #A5864C;
 	  font-size: initial;
+	  padding-right: 5px;
+	  padding-left: 5px;
+  }
+  hr{
+	  margin: 0px;
+  }
+
+  #main-small-nav{
+	  font-weight: 600;
+  }
+  #button-group{
+	  margin-top: 22px;
   }
 
 

@@ -788,32 +788,36 @@
 									<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 									<div class="mobile-nav grid-x hide-for-large">
 										<div class="overlay-content">
-											<div class="main-menu grid-x grid-padding-x">
-												<div class="cell">
+											<div class="main-menu grid-y grid-padding-y">
+												<div class="cell" id="main-small-nav">
 													<a href="#">About</a>
 													<a href="#">Admissions</a>
 													<a href="#">Academics</a>
 													<a href="#">Life at Taylor</a>
 													<hr>
 												</div>
-												<div class="cell small-4 small-menu">
-													<a class="not-active" href=" /News">News</a>
-													<span class="gray-pipe">|</span>
-													<a class="not-active" href=" /Calendar">Calendar</a>
-													<span class="gray-pipe">|</span>
-													<a class="not-active" href=" /Info">Info For</a>
-													<span class="gray-pipe">|</span>
-													<a class="not-active" href=" /give">Give</a>
-												</div>
 											</div>
 											
-											<div class="call-action grid-x grid-padding-x">
-												<div class="cell small-4 button expanded icon first-row text-center" id="apply" href="#"><i class="fas fa-check"></i>Apply</div>
-												<div class="cell small-6 hollow button icon first-row text-center" href="#"><i class="fas fa-tasks"></i>Request Info</div>
-												<div class="cell small-6 hollow button icon first-row text-center" id="visit" href="#"><i class="fas fa-map-marker-alt"></i>Request Info</div>
+											<div class="call-action">
+												<a class="button expanded text-center" id="apply" href="#"><i class="fas fa-check"></i> Apply</a>
+												<div class="button-group expanded" id="button-group">
+													<a class="button hollow" href="#"><i class="fas fa-tasks"></i> Get Info</a>
+													<a class="button hollow" id="visit" href="#"><i class="fas fa-map-marker-alt"></i> Visit</a>
+												</div>
+												<!-- <div class="cell small-5 hollow button text-center" href="#"><i class="fas fa-tasks"></i>Request Info</div>
+												<div class="cell small-5 hollow button text-center" id="visit" href="#"><i class="fas fa-map-marker-alt"></i>Visit</div> -->
 												
 												<!-- <button class="hollow button fas fa-map-marker-alt" id="visit" href="#">Visit</button> -->
-												<hr>
+											</div>
+											<hr>
+											<div class="cell small-6 text-center small-menu padding-bottom-1">
+												<a class="not-active" href=" /News">News</a>
+												<span class="gray-pipe">|</span>
+												<a class="not-active" href=" /Calendar">Calendar</a>
+												<span class="gray-pipe">|</span>
+												<a class="not-active" href=" /Info">Info For</a>
+												<span class="gray-pipe">|</span>
+												<a class="not-active" href=" /give">Give</a>
 											</div>
 											<div class="social-media text-center">
 												<i class="fab fa-facebook-square"></i>
