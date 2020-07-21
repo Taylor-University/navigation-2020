@@ -55,13 +55,13 @@ header {
 .main-nav .mega-menu li {
 	padding-left: 0;
 }
-.main-nav .menu li a {
+.main-nav .show-large-large .menu li a {
 	position: relative;
 	color: #61578b;
 	display: inline-block;
 }
 
-.main-nav .menu li a:before {
+.main-nav .show-for-large .menu li a:before {
 	content: '';
     position: absolute;
     z-index: 0;
@@ -301,6 +301,9 @@ button[type="submit"] {
   .main-menu {
 	  padding-left: 10px;
   }
+  #myNav{
+	background-color: #f2f2f2;
+  }
   
   .main-menu a {
 	padding: 8px;
@@ -310,19 +313,30 @@ button[type="submit"] {
 	display: block;
 	transition: 0.3s;
   }
+  .main-nav .menu li {
+	  padding-left: 0px;
+  }
+
   .call-action {
 	  padding: 10px;
+	  padding-top: 0;
   }
   #apply{
 	  background-color: #61578b;
 	  margin-bottom: -6px;
+	  font-size: 17px;
+  }
+  #getInfo{
+	  font-size: 17px;
   }
 
-  /* #visit {
-	  padding-left: 0px;
-	  padding-right: 0px;
-	  margin-right: 10px;
-} */
+  #visit {
+	font-size: 17px;
+}
+.social-media i{
+	padding-right: 5px;
+	padding-top: 10px;
+}
 
 .button.hollow {
 	border: 1px solid #61578b;
@@ -360,10 +374,9 @@ button[type="submit"] {
   }
 
   .small-menu a{
-	  color: #A5864C;
-	  font-size: initial;
-	  padding-right: 5px;
-	  padding-left: 5px;
+	  color: #87672C; 
+	  font-size: larger;
+	  padding: 5px;
   }
   hr{
 	  margin: 0px;
@@ -372,8 +385,21 @@ button[type="submit"] {
   #main-small-nav{
 	  font-weight: 600;
   }
+  #main-small-nav a{
+	color: #4A4A4A;
+	font-size: 25px;
+	background-color: #f1f1f1;
+  }
   #button-group{
 	  margin-top: 22px;
+	  margin-bottom: 22px;
+  }
+  .button-group .button{
+	  margin-right: .75rem;
+  }
+  #button-group .button.hollow{
+	  padding-right: 5px;
+	  padding-left: 5px;
   }
 
 

@@ -787,30 +787,43 @@
 								<div id="myNav" class="overlay">
 									<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 									<div class="mobile-nav grid-x hide-for-large">
-										<div class="overlay-content">
+										<div class="overlay-content call-action">
 											<div class="main-menu grid-y grid-padding-y">
-												<div class="cell" id="main-small-nav">
-													<a href="#">About</a>
+												<div class="cell small-4 colums" id="main-small-nav">
+													<!-- <a href="#">About</a>
 													<a href="#">Admissions</a>
 													<a href="#">Academics</a>
-													<a href="#">Life at Taylor</a>
-													<hr>
+													<a href="#">Life at Taylor</a> -->
+													<ul class="vertical menu drilldown" data-drilldown data-auto-height="true" data-animate-height="true">
+														<li><a href="#">About</a></li>
+														<li>
+															<a href="#">Admissions</a>
+															<ul class="menu vertical nested">
+																<li><a href="#">About</a></li>
+																<li><a href="#">Two B</a></li>
+																<li><a href="#">Two C</a></li>
+																<li><a href="#">Two D</a></li>
+															</ul>
+														</li>
+														<li><a href="#">Academics</a></li>
+														<li><a href="#">Life at Taylor</a></li>
+													</ul>
 												</div>
+												<hr>
 											</div>
+											
+											
 											
 											<div class="call-action">
 												<a class="button expanded text-center" id="apply" href="#"><i class="fas fa-check"></i> Apply</a>
 												<div class="button-group expanded" id="button-group">
-													<a class="button hollow" href="#"><i class="fas fa-tasks"></i> Get Info</a>
+													<a class="button hollow" id="getInfo" href="#"><i class="far fa-ballot-check"></i> Get Info</a>
 													<a class="button hollow" id="visit" href="#"><i class="fas fa-map-marker-alt"></i> Visit</a>
 												</div>
-												<!-- <div class="cell small-5 hollow button text-center" href="#"><i class="fas fa-tasks"></i>Request Info</div>
-												<div class="cell small-5 hollow button text-center" id="visit" href="#"><i class="fas fa-map-marker-alt"></i>Visit</div> -->
-												
-												<!-- <button class="hollow button fas fa-map-marker-alt" id="visit" href="#">Visit</button> -->
+												<hr>
 											</div>
-											<hr>
-											<div class="cell small-6 text-center small-menu padding-bottom-1">
+											
+											<div class="cell small-6 text-center small-menu padding-bottom-1 padding-top-1">
 												<a class="not-active" href=" /News">News</a>
 												<span class="gray-pipe">|</span>
 												<a class="not-active" href=" /Calendar">Calendar</a>
@@ -820,10 +833,10 @@
 												<a class="not-active" href=" /give">Give</a>
 											</div>
 											<div class="social-media text-center">
-												<i class="fab fa-facebook-square"></i>
-												<i class="fab fa-instagram"></i>
-												<i class="fab fa-twitter-square"></i>
-												<i class="fab fa-youtube-square"></i>
+												<i class="fab fa-facebook-square  fa-lg"></i>
+												<i class="fab fa-instagram  fa-lg"></i>
+												<i class="fab fa-twitter-square  fa-lg"></i>
+												<i class="fab fa-youtube-square  fa-lg"></i>
 											</div>
 											
 										</div>
