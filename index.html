@@ -40,15 +40,18 @@
 
 		<script src="https://kit.fontawesome.com/f2135f2b03.js"></script>
 		<script>
-			function openNav() {
-				document.getElementById("myNav").style.height = "100%";
-			}
+			function toggleNav(x) {
 
-			function closeNav() {
-			document.getElementById("myNav").style.height = "0%";
-			}
-			function myFunction(x) {
-			  x.classList.toggle("change");
+				let el = $("#myNav");
+				let height = el.css("height");
+				x.classList.toggle("change");
+
+				if(height == "0px") {
+					el.css("height", "100%");
+				} else {
+					el.css("height", "0%");
+				}
+
 			}
 		</script>
 
@@ -772,8 +775,7 @@
 
 						</div>
 						<div class="cell small-2  hide-for-large">
-							<div class="container" onclick="myFunction(this)" data-toggle="offCanvasTop1">
-								<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+							<div class="container" onclick="toggleNav(this)" data-toggle="offCanvasTop1" >
 								<div class="bar1"></div>
 								<div class="bar2"></div>
 								<div class="bar3"></div>
@@ -787,7 +789,7 @@
 									</div>
 								</div> -->
 								<div id="myNav" class="overlay">
-									<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+									<!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
 									<div class="mobile-nav grid-x hide-for-large">
 										<div class="overlay-content call-action">
 											<div class="grid-y grid-padding-y">
