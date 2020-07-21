@@ -739,29 +739,31 @@
 								<li>
 									<a href="#">Information For&nbsp;&nbsp;<i class="fas fa-chevron-down"></i></a>
 									<ul class="menu">
-										<li><a href="#" id="item">About Taylor</a></li>
-										<li><a href="#" id="item">Distinctions & Beliefs</a></li>
-										<li><a href="#" id="item">Profile & Rankings</a></li>
-										<li><a href="#" id="item">History & Heritage</a></li>
+										<li><a href="http://www.taylor.edu/graduate" class="item">Graduate</a></li>
+										<li><a href="http://online.taylor.edu" class="item">Online</a></li>
+										<li><a href="http://athletics.taylor.edu/" class="item">Athletics</a></li>
+										<li><a href="https://www.taylor.edu/parents" class="item">Parents</a></li>
+										<li><a href="https://www.taylor.edu/alumni" class="item">Alumni</a></li>
+										<li><a href="https://jobs.taylor.edu" class="item">Jobs</a></li>
 									</ul>
 								</li>
 							</ul>
 						</div>
 						<div class="top-nav-right text-right">
 							<div id="wrap">
-								<a href="">Give</a>
+								<a href="http://www.taylor.edu/give-online">Give</a>
 								<span>|</span>
-								<!-- <form action="" autocomplete="on"> -->
-									<input id="search" name="search" type="text" placeholder="What're we looking for ?"><button type="submit" id="search_submit"><i class="fas fa-search"></i></button>
-								<!-- </form> -->
+								<input id="search" name="search" type="text" placeholder="What're we looking for ?">
+								<button type="submit" id="search_submit">
+									<i class="fas fa-search"></i>
+								</button>
 							</div>
-							<!-- <button><a><i class="fas fa-search"></i></a></button> -->
 						</div>
 					</div>
 					<div class="main-nav grid-x align-middle">
 						<div class="cell logo small-8 large-3">
 							<a href="/">
-								<img class="show-for-large"src="https://www.taylor.edu/img/tu-logo.png" width="250" alt="Taylor University Logo">
+								<img class="show-for-large"src="https://www.taylor.edu/img/tu-logo.png" width="200" alt="Taylor University Logo">
 								<img class="hide-for-large"src="https://shared.taylor.edu/application/themes/foundation-6/pardot/img/logo-w.png" width="150">
 							</a>
 						</div>
@@ -811,9 +813,6 @@
 												</div>
 												<hr>
 											</div>
-											
-											
-											
 											<div class="call-action">
 												<a class="button expanded text-center" id="apply" href="#"><i class="fas fa-check"></i> Apply</a>
 												<div class="button-group expanded" id="button-group">
@@ -838,7 +837,7 @@
 												<i class="fab fa-twitter-square  fa-lg"></i>
 												<i class="fab fa-youtube-square  fa-lg"></i>
 											</div>
-											
+
 										</div>
 								  </div>
 								</div>
@@ -848,9 +847,9 @@
 						<div class="cell show-for-large large-9">
 							<ul class="menu dropdown float-right" data-dropdown-menu>
 								<li class="mega-menu">
-									<a data-toggle="mega-menu" href="#">About</a>
+									<a data-toggle="mega-menu-1" href="#">About</a>
 
-									<div class="dropdown-pane bottom" id="mega-menu" data-dropdown data-options="closeOnClick:true; hover: true; hoverPane: true;">
+									<div class="dropdown-pane bottom" id="mega-menu-1" data-dropdown data-options="closeOnClick:true; hover: true; hoverPane: true;">
 
 										<div class="grid-x large-up-2 expanded">
 											<div class="cell">
@@ -878,7 +877,37 @@
 
 									</div>
 								</li>
-								<li><a href="#">Admissions</a></li>
+								<li class="mega-menu">
+									<a data-toggle="mega-menu-2" href="#">Admissions</a>
+
+									<div class="dropdown-pane bottom" id="mega-menu-2" data-dropdown data-options="closeOnClick:true; hover: true; hoverPane: true;">
+
+										<div class="grid-x large-up-2 expanded">
+											<div class="cell">
+												<ul class="menu vertical">
+													<li><a href="#">About Taylor</a></li>
+													<li><a href="#">Distinctions & Beliefs</a></li>
+													<li><a href="#">Profile & Rankings</a></li>
+													<li><a href="#">History & Heritage</a></li>
+												</ul>
+											</div>
+											<div class="cell">
+												<ul class="menu vertical">
+													<li><a href="#">Accreditation & Memberships</a></li>
+													<li><a href="#">Institutional Strategy & Centers</a></li>
+												</ul>
+											</div>
+											<!-- <div class="cell">
+												<ul class="menu vertical">
+													<li><a href="#">One</a></li>
+													<li><a href="#">Two</a></li>
+													<li><a href="#">Three</a></li>
+												</ul>
+											</div> -->
+										</div>
+
+									</div>
+								</li>
 								<li><a href="#">Academics</a></li>
 								<li><a href="#">Life At Taylor</a></li>
 							</ul>
@@ -1489,6 +1518,22 @@
 			// var lastScroll = 0;
 			$(window).on('load', showCtaOptions);
 			$(window).on('scroll', showCtaOptions);
+
+			$('[data-dropdown]').on('show.zf.dropdown', event, mainMenuHover);
+			$('[data-dropdown]').on('hide.zf.dropdown', event, mainMenuHover);
+
+			function mainMenuHover(event) {
+
+				let el = $('#' + event.target.id);
+				let sibling = el.prev();
+
+				if(el.hasClass('is-open')) {
+					sibling.addClass('visible-link');
+				} else {
+					sibling.removeClass('visible-link');
+				}
+
+			}
 
 			// function myFunction(x) {
 			//   x.classList.toggle("change");
