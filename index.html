@@ -40,19 +40,7 @@
 
 		<script src="https://kit.fontawesome.com/f2135f2b03.js"></script>
 		<script>
-			function toggleNav(x) {
 
-				let el = $("#myNav");
-				let height = el.css("height");
-				x.classList.toggle("change");
-
-				if(height == "0px") {
-					el.css("height", "100%");
-				} else {
-					el.css("height", "0%");
-				}
-
-			}
 		</script>
 
 
@@ -858,6 +846,7 @@
 		<script src="https://shared.taylor.edu/application/themes/foundation-6/js/owl.carousel.min.js"></script>
 
 		<script src="https://shared.taylor.edu/application/themes/foundation-6/js/functions.js?4550061"></script>
+		<script src="nav.js"></script>
 		<script src="https://shared.taylor.edu/application/themes/foundation-6/js/app.js?5479461"></script>
 		<script>
 			// var lastScroll = 0;
@@ -866,45 +855,6 @@
 
 			$('[data-dropdown]').on('show.zf.dropdown', event, mainMenuHover);
 			$('[data-dropdown]').on('hide.zf.dropdown', event, mainMenuHover);
-
-			function mainMenuHover(event) {
-
-				let el = $('#' + event.target.id);
-				let sibling = el.prev();
-
-				if(el.hasClass('is-open')) {
-					sibling.addClass('visible-link');
-				} else {
-					sibling.removeClass('visible-link');
-				}
-
-			}
-
-			// function myFunction(x) {
-			//   x.classList.toggle("change");
-			// }
-
-			function showCtaOptions() {
-
-				let specificHeight = 250
-				let delayInMilliseconds = 300;
-				let scroll = $(window).scrollTop();
-
-				if(scroll >= specificHeight) {
-					setTimeout(function () {
-
-						$('.addmissions-side-menu').removeClass('top');
-
-					}, delayInMilliseconds);
-				} else {
-					setTimeout(function () {
-
-						$('.addmissions-side-menu').addClass('top');
-
-					}, delayInMilliseconds);
-				}
-
-			}
 
 		</script>
 	</body>
