@@ -194,7 +194,7 @@ header {
 	-webkit-transform: rotate(45deg) translate(-8px, -8px);
 	transform: rotate(45deg) translate(-7px, -7px);
 }
-#search {
+.search {
 	color: white;
 	font-weight: normal;
 }
