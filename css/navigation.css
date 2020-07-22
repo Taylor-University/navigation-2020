@@ -291,7 +291,6 @@ button[type="submit"] {
 	top: 0;
 	width: 100%;
 	text-align: left;
-	margin-top: 10px;
   }
   .main-menu {
 	  padding-left: 10px;
@@ -317,19 +316,19 @@ button[type="submit"] {
 	  padding: 10px;
 	  padding-top: 0;
   }
-  #apply{
+  #apply {
 	  background-color: #61578b;
 	  margin-bottom: -6px;
 	  font-size: 17px;
   }
-  #getInfo{
+  #getInfo {
 	  font-size: 17px;
   }
 
   #visit {
 	font-size: 17px;
 }
-.social-media i{
+.social-media i {
 	padding-right: 5px;
 	padding-top: 10px;
 }
@@ -361,7 +360,7 @@ button[type="submit"] {
 	}
   }
 
-#offCanvasTop1{
+#offCanvasTop1 {
 	top: 80px;
 	height: 100%;
   }
@@ -378,25 +377,52 @@ button[type="submit"] {
 	  margin: 0px;
   }
 
-  #main-small-nav{
-	  font-weight: 600;
+  #main-small-nav {
+	  font-weight: 500;
+	  padding-top: 0px;
   }
-  #main-small-nav a{
+  #main-small-nav a {
 	color: #4A4A4A;
-	font-size: 25px;
-	background-color: #f1f1f1;
+	font-size: 22px;
   }
-  #button-group{
+  #button-group {
 	  margin-top: 22px;
 	  margin-bottom: 22px;
   }
   .button-group .button{
 	  margin-right: .75rem;
   }
-  #button-group .button.hollow{
+  #button-group .button.hollow {
 	  padding-right: 5px;
 	  padding-left: 5px;
   }
 
+  .vertical.menu.drilldown li {
+	  margin-bottom: 1px;
+  }
+  .animate-height{
+	box-shadow: 1px 2px 5px lightgrey;
+	max-width: 100%;
+}
+
+.vertical.menu.drilldown li a{
+	padding: 17px;
+	padding-left: 25px;
+}
 
   /* <div class="container" onclick="myFunction(this)" data-toggle="offCanvasTop1"> */
+  .drilldown .is-drilldown-submenu-parent>a::after {
+    display: block;
+    width: 0;
+    height: 0;
+    border: inset 6px;
+	content: '\f054';
+	font-family: 'Font Awesome 5 Pro';
+    border: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
+	right: 3rem;
+	font-weight: 500;
+	font-size: 18px;
+}
