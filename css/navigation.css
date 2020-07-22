@@ -23,7 +23,7 @@ header {
 	padding: 0 20px;
 }
 .main-nav {
-	padding: 20px 15px;
+	padding: 15px 15px;
 }
 @media print, screen and (max-width: 64em) {
     .main-nav {
@@ -278,7 +278,7 @@ button[type="submit"] {
 	width: 100%;
 	position: fixed;
 	z-index: 1;
-	top: 80px;
+	top: 70px;
 	left: 0;
 	background-color: white;
 
@@ -409,6 +409,26 @@ button[type="submit"] {
 	padding: 17px;
 	padding-left: 25px;
 }
+#mobile-search.off-canvas {
+	background-color: #61578b;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#mobile-search input[type='search'], #mobile-search form .error select[type='search'], form .error #mobile-search select[type='search'] {
+	color: #fff;
+	background-color: #61578b;
+	box-shadow: none;
+	border: none;
+	border-bottom: 1px solid #DDD;
+	border-radius: 0;
+}
+#mobile-search a {
+	color: #fff;
+}
+.off-canvas.is-transition-overlap.is-open {
+	box-shadow: none;
+}
+
 
   /* <div class="container" onclick="myFunction(this)" data-toggle="offCanvasTop1"> */
   .drilldown .is-drilldown-submenu-parent>a::after {
