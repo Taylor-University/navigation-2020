@@ -483,5 +483,12 @@ ul.menu.vertical.nested.submenu.is-drilldown-submenu.is-active{
 
 #mobile-info.position-bottom{
 	z-index: 100;
-	height: 147px;
+	height: 208px;
+}
+#info-x{
+	margin-top: -35px;
+}
+
+#mobile-info a i{
+	color: #424242; ;
 }
