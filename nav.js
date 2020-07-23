@@ -1,12 +1,12 @@
 function mainMenuHover(event) {
 
 	let el = $('#' + event.target.id);
-	let sibling = el.prev();
+	let link = $('.mega-menu').find("[data-toggle='" + event.target.id + "']");
 
 	if(el.hasClass('is-open')) {
-		sibling.addClass('visible-link');
+		link.addClass('visible-link');
 	} else {
-		sibling.removeClass('visible-link');
+		link.removeClass('visible-link');
 	}
 
 }

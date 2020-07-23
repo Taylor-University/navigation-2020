@@ -89,14 +89,11 @@ header {
 	left:0%;
 	width: 100%
 }
-.main-nav .mega-menu li a {
-	padding-left: 0;
-}
-.main-nav .mega-menu li a:before {
+.main-nav .dropdown-pane .menu li a:before {
 	left: 0;
 	height: 3px;
 }
-.main-nav .mega-menu li a:hover:before {
+.main-nav .dropdown-pane .menu li a:hover:before {
 	right: 0;
 }
 .dropdown-pane {
@@ -104,9 +101,13 @@ header {
 	left: 40% !important;
     width: 60%;
 }
-.main-nav .show-for-large .menu .dropdown-pane li a {
+.main-nav .show-for-large .dropdown-pane li a {
 	color: #4a4a4a;
 	font-weight: normal;
+	padding-left: 0;
+}
+.main-nav .dropdown-pane li {
+	padding-left: 0;
 }
 .main-nav .dropdown-pane .title {
 	font-size: 22px;
