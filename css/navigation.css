@@ -58,7 +58,6 @@ header {
 .main-nav .menu li{
 	padding-left: 60px;
 	font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-	font-size: 14px;
 	font-weight: bold;
 }
 .main-nav .mega-menu li {
@@ -68,7 +67,7 @@ header {
 	position: relative;
 	color: #61578b;
 	display: inline-block;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 .main-nav .show-for-large .menu li a:before {
@@ -98,19 +97,20 @@ header {
 }
 .dropdown-pane {
 	padding: 2rem;
-	left: 40% !important;
-    width: 60%;
+	left: 30% !important;
+    width: 70%;
 }
 .main-nav .show-for-large .dropdown-pane li a {
 	color: #4a4a4a;
 	font-weight: normal;
 	padding-left: 0;
+	font-size: 16px;
 }
 .main-nav .dropdown-pane li {
 	padding-left: 0;
 }
 .main-nav .dropdown-pane .title {
-	font-size: 22px;
+	font-size: 20px;
     font-weight: bold;
     font-family: "Noto Serif", serif;
     border-bottom: 1px solid #ccc;
