@@ -36,13 +36,8 @@
 		<link type="text/css" href="https://shared.taylor.edu/application/themes/foundation-6/css/app.css" rel="stylesheet"/>
 		<link type="text/css" href="https://shared.taylor.edu/application/themes/foundation-6/css/style.css" rel="stylesheet"/>
 		<link type="text/css" href="css/navigation.css" rel="stylesheet"/>
-		<!-- <link type="text/js" href="css/nav.js" rel="stylesheet"/> -->
 
 		<script src="https://kit.fontawesome.com/f2135f2b03.js"></script>
-		<script>
-
-		</script>
-
 
 	</head>
     <body>
@@ -207,7 +202,7 @@
 
 									<div class="dropdown-pane bottom" id="mega-menu-1" data-dropdown data-options="closeOnClick:true; hover: true; hoverPane: true;">
 
-										<div class="grid-x large-up-2 expanded">
+										<div class="grid-x large-up-3 expanded">
 											<div class="cell">
 												<ul class="menu vertical">
 													<li><a href="#">About Taylor</a></li>
@@ -222,13 +217,14 @@
 													<li><a href="#">Institutional Strategy & Centers</a></li>
 												</ul>
 											</div>
-											<!-- <div class="cell">
+											<div class="cell">
 												<ul class="menu vertical">
-													<li><a href="#">One</a></li>
+													<li class="title">Related Links</li>
+													<li><a href="#">Campus Store</a></li>
 													<li><a href="#">Two</a></li>
 													<li><a href="#">Three</a></li>
 												</ul>
-											</div> -->
+											</div>
 										</div>
 
 									</div>
@@ -241,16 +237,19 @@
 										<div class="grid-x large-up-2 expanded">
 											<div class="cell">
 												<ul class="menu vertical">
-													<li><a href="#">About Taylor</a></li>
-													<li><a href="#">Distinctions & Beliefs</a></li>
-													<li><a href="#">Profile & Rankings</a></li>
-													<li><a href="#">History & Heritage</a></li>
+													<li><a href="#">Admissions</a></li>
+													<li><a href="#">Apply</a></li>
+													<li><a href="#">Visit</a></li>
+													<li><a href="#">Accepted</a></li>
 												</ul>
 											</div>
 											<div class="cell">
 												<ul class="menu vertical">
-													<li><a href="#">Accreditation & Memberships</a></li>
-													<li><a href="#">Institutional Strategy & Centers</a></li>
+													<li class="title">Im A ...</li>
+													<li><a href="#">International Students</a></li>
+													<li><a href="#">Missionary/Third Culture Students</a></li>
+													<li><a href="#">Transfer Students</a></li>
+													<li><a href="#">Homeschool Students</a></li>
 												</ul>
 											</div>
 											<!-- <div class="cell">
@@ -845,13 +844,13 @@
 		<script src="nav.js"></script>
 		<script src="https://shared.taylor.edu/application/themes/foundation-6/js/app.js?5479461"></script>
 		<script>
-			// var lastScroll = 0;
 			$(window).on('load', showCtaOptions);
 			$(window).on('scroll', showCtaOptions);
 
 			$('[data-dropdown]').on('show.zf.dropdown', event, mainMenuHover);
 			$('[data-dropdown]').on('hide.zf.dropdown', event, mainMenuHover);
-			$('#mobile-search').on('opened.zf.offcanvas', function() {
+			// $('#mobile-search').on('opened.zf.offcanvas', function() {
+			$('[data-off-canvas]').on('closed.zf.offcanvas', function() {
 				console.log("Test");
 				// $('#search').focus();
 			});
