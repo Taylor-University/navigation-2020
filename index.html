@@ -59,6 +59,9 @@
 				</div>
 			  </div>
 			</div>
+			<div id="mobile-info" class="off-canvas position-bottom" data-force-to="false" data-off-canvas data-position="bottom" data-transition="overlap">
+				<p>Test</p>
+			</div>
 
 			<div class="off-canvas-content" data-off-canvas-content>
 				<header>
@@ -109,20 +112,10 @@
 						</div>
 						<div class="mobile-nav grid-x hide-for-large">
 							<div class="cell">
-								<!-- <div class="off-canvas-wrapper">
-									<div class="off-canvas position-top" id="offCanvasTop1" data-off-canvas>
-									  Your menu or Off-canvas content goes here
-									</div>
-								</div> -->
 								<div id="myNav" class="overlay">
-									<!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
 									<div class="mobile-nav hide-for-large">
 										<div class="overlay-content">
 												<div id="main-small-nav">
-													<!-- <a href="#">About</a>
-													<a href="#">Admissions</a>
-													<a href="#">Academics</a>
-													<a href="#">Life at Taylor</a> -->
 													<ul class="vertical menu drilldown" data-drilldown data-auto-height="true" data-animate-height="true">
 														<li>
 															<a href="#">About</a>
@@ -135,8 +128,8 @@
 														</li>
 														<li>
 															<a href="#">Admissions</a>
-															<ul class="menu vertical nested">
-																<li><a href="#">About</a></li>
+															<ul class="menu vertical nested" >
+																<li id="secNav"><a href="#">About</a></li>
 																<li><a href="#">Two B</a></li>
 																<li><a href="#">Two C</a></li>
 																<li><a href="#">Two D</a></li>
@@ -144,7 +137,7 @@
 														</li>
 														<li>
 															<a href="#">Academics</a>
-															<ul class="menu vertical nested">
+															<ul class="menu vertical nested" >
 																<li><a href="#">About</a></li>
 																<li><a href="#">Two B</a></li>
 																<li><a href="#">Two C</a></li>
@@ -177,7 +170,8 @@
 														<span class="gray-pipe">|</span>
 														<a class="not-active" href=" /Calendar">Calendar</a>
 														<span class="gray-pipe">|</span>
-														<a class="not-active" href=" /Info">Info For</a>
+														<a class="not-active" data-toggle="mobile-info">Info For</a>
+														<i class="far fa-chevron-down"></i>
 														<span class="gray-pipe">|</span>
 														<a class="not-active" href=" /give">Give</a>
 													</div>
@@ -188,6 +182,10 @@
 														<i class="fab fa-youtube-square  fa-lg"></i>
 													</div>
 												</div>
+
+
+
+
 
 										</div>
 								  </div>
@@ -252,13 +250,6 @@
 													<li><a href="#">Homeschool Students</a></li>
 												</ul>
 											</div>
-											<!-- <div class="cell">
-												<ul class="menu vertical">
-													<li><a href="#">One</a></li>
-													<li><a href="#">Two</a></li>
-													<li><a href="#">Three</a></li>
-												</ul>
-											</div> -->
 										</div>
 
 									</div>
