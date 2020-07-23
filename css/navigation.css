@@ -99,18 +99,16 @@ header {
 .main-nav .mega-menu li a:hover:before {
 	right: 0;
 }
-.mega-menu .dropdown-pane {
-	width: 100%;
-	margin: 0 auto !important;
-	left: 0% !important;
-	right: 0% !important;
+.dropdown-pane {
 	padding: 2rem;
+	left: 40% !important;
+    width: 60%;
 }
 .main-nav .show-for-large .menu .dropdown-pane li a {
 	color: #4a4a4a;
 	font-weight: normal;
 }
-.mega-menu .dropdown-pane .title {
+.main-nav .dropdown-pane .title {
 	font-size: 22px;
     font-weight: bold;
     font-family: "Noto Serif", serif;
