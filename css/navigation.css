@@ -371,10 +371,14 @@ button[type="submit"] {
   .small-menu a{
 	  color: #87672C;
 	  font-size: larger;
-	  padding: 5px;
+	  padding: 3px;
   }
   hr{
 	  margin: 0px;
+  }
+  .small-menu i{
+	color: #87672C;
+	padding-right: 5px;
   }
 
   #main-small-nav {
@@ -403,6 +407,13 @@ button[type="submit"] {
   .animate-height{
 	box-shadow: 1px 2px 5px lightgrey;
 	max-width: 100%;
+}
+/* .main-small-nav .is-drilldown .animate-height {
+	height: 285px !important;
+} */
+
+#main-small-nav .menu .nested li{
+	font-weight: 400 !important;
 }
 
 .vertical.menu.drilldown li a{
@@ -468,4 +479,9 @@ li.is-drilldown-submenu-item.is-drilldown-submenu-item a{
 }
 ul.menu.vertical.nested.submenu.is-drilldown-submenu.is-active{
 	background-color: #f2f2f2;
+}
+
+#mobile-info.position-bottom{
+	z-index: 100;
+	height: 147px;
 }
