@@ -72,7 +72,7 @@
 
 			<div class="off-canvas-content" data-off-canvas-content>
 				<header>
-					<div class="top-bar show-for-large">
+					<div class="top-bar show-for-large" >
 						<div class="top-nav-left">
 							<ul class="menu dropdown" id="info-menu" data-dropdown-menu>
 								<li>
@@ -108,9 +108,8 @@
 						</div>
 						<div class="cell small-2 hide-for-large">
 							<a id="search-mobile-button" class="search" data-toggle="mobile-search"><i class="fal fa-search fa-lg float-right"></i></a>
-
 						</div>
-						<div class="cell small-2  hide-for-large">
+						<div class="cell small-2 hide-for-large">
 							<div class="container" onclick="toggleNav(this)" data-toggle="offCanvasTop1" >
 								<div class="bar1"></div>
 								<div class="bar2"></div>
@@ -123,7 +122,7 @@
 									<div class="mobile-nav hide-for-large">
 										<div class="overlay-content">
 											<div id="main-small-nav">
-												<ul class="vertical menu drilldown" data-drilldown data-auto-height="true" data-animate-height="true">
+												<ul class="vertical menu drilldown" data-drilldown data-auto-height="true" data-back-button='<li class="js-drilldown-back"><a class="new-back"></a></li>'>
 													<li>
 														<a href="#">About</a>
 														<ul class="menu vertical nested">
@@ -202,7 +201,7 @@
 												</div>
 											</div>
 										</div>
-								  	</div>
+									</div>
 								</div>
 							</div>
 
@@ -269,7 +268,7 @@
 											<li><a href="#">Pre-college Programs</a></li>
 											<li><a href="#">Research & Publications</a></li>
 											<li><a href="#">Majors</a></li>
-											
+
 
 										</ul>
 									</div>
@@ -335,259 +334,6 @@
 						<div class="cell small-4 icon last-row text-center"><a href="#"><i class="fas fa-map-marker-alt"></i></a></div>
 						<div class="cell small-8 last-row text-left"><a href="#">Visit</a></div>
 					</div>
-
-					<!-- <div id="full-nav" class="show-for-large" data-sticky data-options="marginTop:0;">
-						<div class="full-nav-container">
-
-											<div class="top-bar">
-								<div class="top-bar-left">
-									<ul class="menu">
-
-																		<li class="button left">
-													<a href=" /how-to-apply/" target="_self"> Apply</a>
-												</li>
-
-
-																		<li>
-													<a href=" /visit" target="_self"> Visit</a>
-												</li>
-
-
-																		<li>
-													<a href=" https://admissions.taylor.edu/inquiry-form" target="_self"> Request Info</a>
-												</li>
-
-														</ul>
-								</div>
-
-
-								<div class="top-bar-right">
-									<ul class="menu align-right">
-
-																		<li>
-													<a href="http://www.taylor.edu/graduate" target="_self"> Graduate</a>
-												</li>
-
-
-																		<li>
-													<a href="http://online.taylor.edu" target="_blank"> Online</a>
-												</li>
-
-
-																		<li>
-													<a href="http://athletics.taylor.edu/" target="_blank"> Athletics</a>
-												</li>
-
-
-																		<li>
-													<a href="https://www.taylor.edu/parents" target="_blank"> Parents</a>
-												</li>
-
-
-																		<li>
-													<a href="https://www.taylor.edu/alumni" target="_blank"> Alumni</a>
-												</li>
-
-
-																		<li>
-													<a href="https://jobs.taylor.edu" target="_blank"> Jobs</a>
-												</li>
-
-
-																		<li class="button right">
-													<a href="http://www.taylor.edu/give-online" target="_self"> Give</a>
-												</li>
-
-														</ul>
-								</div>
-							</div>
-
-							<div class="bottom-bar grid-x grid-padding-x align-middle text-center">
-								<div class="logo cell large-4 large-order-1">
-									<a href="/">
-										<img type="image/svg+xml" src="https://www.taylor.edu/img/TaylorUniversity-w-logo.svg" alt="Taylor University Logo" class="svg ">
-									</a>
-								</div>
-
-
-								<div class="main-nav cell large-4 large-order-3 xlarge-order-2">
-									<div class="tagline"><em>A Christian Liberal Arts University, Est. 1846</em></div>
-									<ul class="menu menu-shift">
-
-																								<li>
-													<a  class="not-active" href=" /admissions"> admissions</a>
-																				</li>
-
-																		<li class="gray-pipe">|</li>
-
-
-																								<li>
-													<a  class="not-active" href=" /majors"> majors</a>
-																				</li>
-
-																		<li class="gray-pipe">|</li>
-
-
-																								<li>
-													<a  class="not-active" href=" /opportunities"> opportunities</a>
-																				</li>
-
-																		<li class="gray-pipe">|</li>
-
-
-																								<li>
-													<a  class="not-active" href=" /campus"> campus</a>
-																				</li>
-
-
-														</ul>
-								</div>
-								<div class="search cell large-4 large-order-2 xlarge-order-3">
-									<form id="searchForm" action="/search">
-										<ul class="menu align-right">
-											<li class="input-box"><input id="search-input" name="q" type="search" autocomplete="off" class="input"></li>
-											<li class="input-button"><button id="search-button" type="submit" class="button">Search</button></li>
-										</ul>
-									</form>
-								</div>
-							</div>
-
-
-								<div id="subnav-bar">
-									<nav class="hover-underline-menu" data-menu-underline-from-center>
-										<ul class="dropdown menu align-middle" data-dropdown-menu>
-
-
-																		<li>
-													<a class="active" href=" /campus">
-																						<span>Campus</span>
-													</a>
-												</li>
-
-
-
-																		<li>
-													<a  href=" /spiritual-development">
-																						<span>Spiritual Development</span>
-													</a>
-												</li>
-
-
-
-																		<li>
-													<a  href=" /chapel">
-																						<span>Chapel</span>
-													</a>
-												</li>
-
-
-
-																		<li>
-													<a  href=" /residence-life">
-																						<span>Residence Life</span>
-													</a>
-												</li>
-
-
-
-																		<li>
-													<a  href=" /traditions">
-																						<span>Traditions</span>
-													</a>
-												</li>
-
-
-
-
-
-
-
-
-
-																		<li>
-
-																					<a class="is-dropdown-submenu-parent " href="/facilities">
-																						<span>Facilities</span>
-													</a>
-
-													<ul class="menu">
-
-
-
-
-														<li>
-															<a  href="/facilities" target="_self">
-																																		<span>Overview</span>
-																									</a>
-														</li>
-
-
-
-
-
-														<li>
-															<a  href="/facilities/academic-buildings" target="_self">
-																																		<span>Academic</span>
-																									</a>
-														</li>
-
-
-
-
-
-														<li>
-															<a  href="/facilities/dining-areas" target="_self">
-																																		<span>Dining</span>
-																									</a>
-														</li>
-
-
-
-
-
-														<li>
-															<a  href="/facilities/athletic-fitness-locations" target="_self">
-																																		<span>Fitness</span>
-																									</a>
-														</li>
-
-
-
-
-
-														<li>
-															<a  href="/facilities/gathering-performance-spaces" target="_self">
-																																		<span>Gathering</span>
-																									</a>
-														</li>
-
-
-
-
-
-														<li>
-															<a  href="/facilities/residence-halls" target="_self">
-																																		<span>Residence Halls</span>
-																									</a>
-														</li>
-
-																					</ul>
-												</li>
-
-
-
-																		<li>
-													<a  href=" https://public.taylor.edu/services/">
-																						<span>Student Services</span>
-													</a>
-												</li>
-
-															</ul>
-									</nav>
-								</div>
-
-						</div>
-					</div> -->
 				</header>
 
 				<main>
@@ -903,16 +649,24 @@
 		<script src="nav.js"></script>
 		<script src="https://shared.taylor.edu/application/themes/foundation-6/js/app.js?5479461"></script>
 		<script>
-			$(window).on('load', showCtaOptions);
+			$(window).on('load', function() {
+				showCtaOptions();
+
+				$('.new-back').each(function() {
+					var backTxt = $(this).parent().closest('.is-drilldown-submenu-parent').find('> a').text();
+					$(this).html(backTxt);
+				});
+			});
 			$(window).on('scroll', showCtaOptions);
 
 			$('[data-dropdown]').on('show.zf.dropdown', event, mainMenuHover);
 			$('[data-dropdown]').on('hide.zf.dropdown', event, mainMenuHover);
 			// $('#mobile-search').on('opened.zf.offcanvas', function() {
 			// $('[data-off-canvas]').on('closed.zf.offcanvas', function() {
-			// 	console.log("Test");
 			// 	// $('#search').focus();
 			// });
+
+
 
 		</script>
 	</body>
