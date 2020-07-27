@@ -59,15 +59,30 @@
 				</div>
 			  </div>
 			</div>
-			<div id="mobile-info" class="off-canvas position-bottom" data-force-to="false" data-off-canvas data-position="bottom" data-transition="overlap">
-				<p>Test</p>
-				<div class="cell small-2 text-right" id="info-x">
-					<a data-toggle="mobile-info" class= "margin-right-1">
-					  <span class="icon">
-						<i class="fal fa-2x fa-times"></i>
-					  </span>
-					</a>
-				  </div>
+			<div id="mobile-info" class="off-canvas position-bottom hide-for-large" data-force-to="false" data-off-canvas data-position="bottom" data-transition="overlap">
+
+					<ul class="menu vertical nested text-left" id="info-nav">
+						<div class="grid-x">
+							<div class="cell small-8 text-right padding-left-3">
+								<a class="title" id="info-for">Info For</a>
+							</div>
+							<div class="cell small-4 text-right padding-right-1">
+								<a data-toggle="mobile-info" id="info-x">
+									  <i class="fal fa-2x fa-times"></i>
+								</a>
+							</div>
+						</div>
+						<div class="lines">
+							<li class="padding-left-1"><a href="#">Online</a></li>
+							<li class="padding-left-1"><a href="#">Graduate</a></li>
+							<li class="padding-left-1"><a href="#">Athletics</a></li>
+							<li class="padding-left-1"><a href="#">Parents</a></li>
+							<li class="padding-left-1"><a href="#">Alumni</a></li>
+							<li class="padding-left-1"><a href="#">Jobs</a></li>
+						</div>
+
+					</ul>
+
 			</div>
 
 			<div class="off-canvas-content" data-off-canvas-content>
@@ -140,35 +155,40 @@
 																	<li><a href="#">Area Lodging</a></li>
 																</ul>
 															</li>
-															<li><a href="#">Two C</a></li>
-															<li><a href="#">Two D</a></li>
+															<li><a href="#">Administration</a></li>
+															<li><a href="#">Profile</a></li>
+															<li><a href="#">News and Events</a></li>
 														</ul>
 													</li>
 													<li>
 														<a class="custom-parent" href="#">Admissions</a>
 														<ul class="menu vertical nested" >
-															<li id="secNav"><a href="#">About</a></li>
-															<li><a href="#">Two B</a></li>
-															<li><a href="#">Two C</a></li>
-															<li><a href="#">Two D</a></li>
+															<li id="secNav"><a href="#">Accepted</a></li>
+															<li><a href="#">Visit</a></li>
+															<li><a href="#">Apply</a></li>
+															<li><a href="#">Pre-college Programs</a></li>
+															<li><a href="#">Financial Aid</a></li>
+															<li><a href="#">Admissions</a></li>
 														</ul>
 													</li>
 													<li>
 														<a class="custom-parent" href="#">Academics</a>
 														<ul class="menu vertical nested" >
-															<li><a href="#">About</a></li>
-															<li><a href="#">Two B</a></li>
-															<li><a href="#">Two C</a></li>
-															<li><a href="#">Two D</a></li>
+															<li><a href="#">Liberal Arts</a></li>
+															<li><a href="#">Study Abroad</a></li>
+															<li><a href="#">Special Programs</a></li>
+															<li><a href="#">Pre-College Program</a></li>
+															<li><a href="#">Majors</a></li>
 														</ul>
 													</li>
 													<li>
 														<a class="custom-parent" href="#">Life at Taylor</a>
 														<ul class="menu vertical nested">
-															<li><a href="#">About</a></li>
-															<li><a href="#">Two B</a></li>
-															<li><a href="#">Two C</a></li>
-															<li><a href="#">Two D</a></li>
+															<li><a href="#">Spiritual Life</a></li>
+															<li><a href="#">Athletics</a></li>
+															<li><a href="#">Activites and Organizations</a></li>
+															<li><a href="#">Housing</a></li>
+															<li><a href="#">Dining</a></li>
 														</ul>
 													</li>
 												</ul>
@@ -214,8 +234,12 @@
 								<li class="mega-menu">
 									<a data-toggle="mega-menu-2" href="#">Admissions</a>
 								</li>
-								<li><a href="#">Academics</a></li>
-								<li><a href="#">Life At Taylor</a></li>
+								<li class="mega-menu">
+									<a data-toggle="mega-menu-3" href="#">Academics</a>
+								</li>
+								<li class="mega-menu">
+									<a data-toggle="mega-menu-4" href="#">Life At Taylor</a>
+								</li>
 							</ul>
 
 							<div class="dropdown-pane bottom" id="mega-menu-1" data-dropdown data-options="closeOnClick:true; hover: true; hoverPane: true;">
@@ -252,42 +276,22 @@
 											<li><a href="#">Gathering & Performance Spaces</a></li>
 											<li><a href="#">Emergency Updates</a></li>
 											<li><a href="#">Conferences</a></li>
+											<li><a href="#">Facilities</a></li>
 										</ul>
 									</div>
 								</div>
 							</div>
 							<div class="dropdown-pane bottom" id="mega-menu-2" data-dropdown data-options="closeOnClick:true; hover: true; hoverPane: true;">
-								<div class="grid-x large-up-2 expanded">
+								<div class="grid-x grid-padding-x large-up-3 expanded">
 									<div class="cell">
 										<ul class="menu vertical">
-											<li><a href="#">Admissions</a></li>
-											<li><a href="#">Apply</a></li>
+											<li class="title">Admissions</li>
 											<li><a href="#">Visit</a></li>
+											<li><a href="#">Apply</a></li>
 											<li><a href="#">Accepted</a></li>
-											<li><a href="#">Music & Theatre</a></li>
 											<li><a href="#">Pre-college Programs</a></li>
 											<li><a href="#">Research & Publications</a></li>
 											<li><a href="#">Majors</a></li>
-
-
-										</ul>
-									</div>
-									<div class="cell">
-										<ul class="menu vertical">
-											<li><a href="#">Special Programs</a></li>
-											<li><a href="#">Study Abroad</a></li>
-											<li><a href="#">Accepted</a></li>
-											<li><a href="#">Visit</a></li>
-										</ul>
-									</div>
-
-									<div class="cell">
-										<ul class="menu vertical">
-											<li class="title">Im A ...</li>
-											<li><a href="#">International Students</a></li>
-											<li><a href="#">Missionary/Third Culture Students</a></li>
-											<li><a href="#">Transfer Students</a></li>
-											<li><a href="#">Homeschool Students</a></li>
 										</ul>
 									</div>
 									<div class="cell">
@@ -299,6 +303,15 @@
 											<li><a href="#">Scholarships</a></li>
 											<li><a href="#">Tuition & Funding</a></li>
 											<li><a href="#">Alumni Referral Grant</a></li>
+										</ul>
+									</div>
+									<div class="cell">
+										<ul class="menu vertical">
+											<li class="title">Im A ...</li>
+											<li><a href="#">International Students</a></li>
+											<li><a href="#">Missionary/Third Culture Students</a></li>
+											<li><a href="#">Transfer Students</a></li>
+											<li><a href="#">Homeschool Students</a></li>
 										</ul>
 									</div>
 									<!-- <div class="cell">
@@ -321,6 +334,44 @@
 											<li><a href="#">Study Abroad</a></li>
 										</ul>
 									</div> -->
+								</div>
+							</div>
+							<div class="dropdown-pane bottom" id="mega-menu-3" data-dropdown data-options="closeOnClick:true; hover: true; hoverPane: true;">
+								<div class="grid-x grid-padding-x large-up-3 expanded">
+									<div class="cell">
+										<ul class="menu vertical">
+											<li class="title">Academics</li>
+											<li><a href="#">Liberal Arts</a></li>
+											<li><a href="#">Study Abroad</a></li>
+											<li><a href="#">Special Programs</a></li>
+											<li><a href="#">Majors</a></li>
+											<li><a href="#">Pre-Major</a></li>
+											<li><a href="#">Graduate Programs</a></li>
+											<li><a href="#">Music & Theatre</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="dropdown-pane bottom" id="mega-menu-4" data-dropdown data-options="closeOnClick:true; hover: true; hoverPane: true;">
+								<div class="grid-x large-up-2 expanded">
+									<div class="cell">
+										<ul class="menu vertical">
+											<li class="title">Life At Taylor</li>
+											<li><a href="#">Spiritual Life</a></li>
+											<li><a href="#">Student Health</a></li>
+											<li><a href="#">Police</a></li>
+											<li><a href="#">Emergency & Fire</a></li>
+											<li><a href="#">Athletics</a></li>
+										</ul>
+									</div>
+									<div class="cell margin-top-2">
+										<ul class="menu vertical">
+											<li><a href="#">Activites And Organizations</a></li>
+											<li><a href="#">Travel & Outreach</a></li>
+											<li><a href="#">Housing</a></li>
+											<li><a href="#">Dining</a></li>
+										</ul>
+									</div>
 								</div>
 							</div>
 
