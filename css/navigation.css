@@ -352,9 +352,9 @@ button[type="submit"] {
 }
 
 
-  .overlay a:hover, .overlay a:focus {
+  /* .overlay a:hover, .overlay a:focus {
 	color: #f1f1f1;
-  }
+  } */
 
   .overlay .closebtn {
 	position: absolute;
