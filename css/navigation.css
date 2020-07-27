@@ -1,5 +1,10 @@
 header {
-	background-color: white;
+	box-shadow: 0px -2px 10px #4a4a4a;
+	position: fixed;
+	width: 100%;
+}
+main {
+	padding-top: 70px;
 }
 .top-bar {
 	background-color: #61578b;
@@ -23,6 +28,7 @@ header {
 	padding: 0 20px;
 }
 .main-nav {
+	background-color: white;
 	padding: 15px 15px;
 }
 @media print, screen and (max-width: 64em) {
@@ -390,11 +396,11 @@ button[type="submit"] {
 
   #main-small-nav {
 	  font-weight: 500;
-	  padding-top: 0px;
+	  /* padding-top: 0px; */
   }
   #main-small-nav a {
 	color: #4A4A4A;
-	font-size: 22px;
+	/* font-size: 18px; */
   }
   #button-group {
 	  margin-top: 22px;
@@ -409,10 +415,12 @@ button[type="submit"] {
   }
 
   .vertical.menu.drilldown li {
-	  margin-bottom: 1px;
+	  /* margin-bottom: 1px; */
+	  border-top: 1px solid #f2f2f2;
   }
   .animate-height{
 	box-shadow: 1px 2px 5px lightgrey;
+	background-color: #fefefe;
 	max-width: 100%;
 }
 /* .main-small-nav .is-drilldown .animate-height {
@@ -422,9 +430,8 @@ button[type="submit"] {
 #main-small-nav .menu .nested li{
 	font-weight: 400 !important;
 }
-
 .vertical.menu.drilldown li a{
-	padding: 17px;
+	padding: 18px;
 	padding-left: 25px;
 }
 #mobile-search.off-canvas {
@@ -446,14 +453,13 @@ button[type="submit"] {
 .off-canvas.is-transition-overlap.is-open {
 	box-shadow: none;
 }
+.drilldown .is-drilldown-submenu {
+	/* top: 5px; */
+}
 
-
-  /* <div class="container" onclick="myFunction(this)" data-toggle="offCanvasTop1"> */
-  .drilldown .is-drilldown-submenu-parent>a::after {
+/* <div class="container" onclick="myFunction(this)" data-toggle="offCanvasTop1"> */
+.drilldown .is-drilldown-submenu-parent>a::after {
     display: block;
-    width: 0;
-    height: 0;
-    border: inset 6px;
 	content: '\f054';
 	font-family: 'Font Awesome 5 Pro';
     border: none;
@@ -466,25 +472,40 @@ button[type="submit"] {
 }
 
 .drilldown .js-drilldown-back>a::before {
-	width: 0;
-    height: 0;
-    border: inset 6px;
 	content: '\f053';
 	font-family: 'Font Awesome 5 Pro';
     border: none;
-    display: inline-block;
     vertical-align: middle;
-	margin-right: 8.75rem;
-	padding-bottom: 16px;
+	/* padding-bottom: 16px; */
+	position: absolute;
+	left: 30px;
+
+}
+.drilldown .is-drilldown-submenu-parent[aria-expanded="true"]>a {
+	background-color: #f2f2f2;
+}
+/* .drilldown .is-drilldown-submenu-parent>a.custom-parent + ul {
+	top: 5px;
+	margin-top: 0px;
+} */
+.drilldown .is-drilldown-submenu-parent.is-drilldown-submenu-item>a + ul {
+	/* margin-top: -5px; */
 }
 
 li.js-drilldown-back a {
 	background-color: #f2f2f2;
+	padding-top: 15px !important;
+	height: 45px;
+	/* margin-top: -5px; */
+	font-weight: bold;
+	text-align: center;
+	/* font-size: 18px; */
 }
 li.is-drilldown-submenu-item.is-drilldown-submenu-item a{
-	margin-bottom: 1px;
+	/* margin-bottom: 1px; */
 }
-ul.menu.vertical.nested.submenu.is-drilldown-submenu.is-active{
+ul.menu.vertical.nested.submenu.is-active{
+	/* padding-top: 5px; */
 	background-color: #f2f2f2;
 }
 
@@ -495,10 +516,11 @@ ul.menu.vertical.nested.submenu.is-drilldown-submenu.is-active{
 
 #mobile-info{
 	font-size: 18px;
+	box-shadow: 0px -5px 5px rgba(10,10,10,.2);
 }
 
-#mobile-info a i{
-	color: #424242; 
+#mobile-info a i, #mobile-info a {
+	color: #424242;
 }
 #info-nav{
 	background-color: #fefefe;
@@ -518,7 +540,7 @@ ul.menu.vertical.nested.submenu.is-drilldown-submenu.is-active{
 .lines li{
 	border-top-style: solid;
     border-width: .5px;
-	border-color: #DDDDDD;
+	border-color: #f2f2f2;
 }
 .lines li a{
 	color: #4A4A4A;
