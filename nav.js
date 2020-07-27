@@ -21,6 +21,7 @@ function toggleNav(self) {
 		el.css("height", "100%");
 	} else {
 		el.css("height", "0%");
+		$('#mobile-info').foundation('close');
 	}
 
 }
