@@ -482,10 +482,14 @@ button[type="submit"] {
     vertical-align: middle;
 	margin-right: 8.75rem;
 	padding-bottom: 16px;
+	position: absolute;
+	left: 30px;
 }
 
 li.js-drilldown-back a {
 	background-color: #f2f2f2;
+	text-align: center;
+	font-weight: bold;
 }
 li.is-drilldown-submenu-item.is-drilldown-submenu-item a{
 	margin-bottom: 1px;
